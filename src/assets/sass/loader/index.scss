@@ -1,0 +1,23 @@
+.loader {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  @extend .rect;
+  height: 60px;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+.loader-text:after {
+  content: "Loading...";
+  display: block;
+  margin-top: 16px;
+}
+
+.loader[value]::-webkit-progress-bar {
+  background: $color-dark;
+}
+
+.loader[value]::-webkit-progress-value {
+  background: $color-white;
+}

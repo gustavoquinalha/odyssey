@@ -1,5 +1,10 @@
 /* variables, reset, base */
 @import 'base/index.scss';
+@import 'shadow/index.scss';
 
-/* atoms */
-@import 'grid/index.scss';
+@import 'menu/index.scss';
+@import 'game/index.scss';
+@import 'form/index.scss';
+@import 'loader/index.scss';
+@import 'table/index.scss';
+

@@ -1,0 +1,23 @@
+.table {
+  position: relative;
+  box-shadow: 4px 0 , 0 -4px , -4px 0 , 0 4px
+}
+
+[table-text]::after {
+  content: attr(table-text);
+  position: absolute;
+  padding: 0 16px;
+  box-sizing: border-box;
+  top: -20px;
+  left: 20px;
+  background: $color-dark;
+}
+
+.table tr th {
+  box-shadow: -4px 0 $color-white, 0 4px #fff;
+}
+
+.table tr {
+  box-shadow: 0 4px #fff;
+  line-height: 3;
+}

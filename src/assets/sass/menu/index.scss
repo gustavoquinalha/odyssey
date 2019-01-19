@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 4;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  @extend .rect;
+  padding: 32px 0;
+    &:after {
+      content: "MENU";
+      position: absolute;
+      padding: 0 16px;
+      box-sizing: border-box;
+      top: -40px;
+      background: $color-dark;
+    }
+}

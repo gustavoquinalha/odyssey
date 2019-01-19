@@ -42,13 +42,13 @@ import docComponent from "../docs/components/component/index.md";
 var bgMode = [{
     default: true,
     name: "light",
-    value: "#fff",
-    color: "#000"
+    value: "$color-white",
+    color: "$color-dark"
   },
   {
     name: "dark",
-    value: "#000",
-    color: "#fff"
+    value: "$color-dark",
+    color: "$color-white"
   }
 ];
 

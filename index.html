@@ -16,21 +16,140 @@
 
 <body>
 
-  <div class="container align-center" style="min-height: 100vh">
-    <h1>Design System <span id="hero" class="hero"></span></h1>
+  <div class="container align-center game h1">
+    <div class="size margin">
+      <span id="ds">
+        Odyssey Styleguide
+        <br>
+        A primitive design system for your games.
+      </span>
+    </div>
   </div>
+
+  <div class="container align-center game">
+    <div class="size margin container column align-center">
+      <div class="p-5 full-width">
+        <progress class="loader" value="40" max="100"></progress>
+      </div>
+      <div class="p-5 full-width">
+        <progress class="loader loader-text" value="68" max="100"></progress>
+      </div>
+    </div>
+  </div>
+
+  <div class="container align-center game">
+    <div class="size margin">
+      <div class="menu container wrap align-center">
+        <div class="menu-item">
+          <input type="radio" name="menu" value="yes" id="play" class="select-radio" checked>
+          <label class="select-label" for="play">Play game</label>
+        </div>
+        <div class="menu-item">
+          <input type="radio" name="menu" value="no" id="resume" class="select-radio">
+          <label class="select-label" for="resume">Resume game</label>
+        </div>
+        <div class="menu-item">
+          <input type="radio" name="menu" value="no" id="ranking" class="select-radio">
+          <label class="select-label" for="ranking">Ranking</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container align-center game">
+    <div class="size margin">
+      <div class="question column">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aperiam placeat nihil deserunt nesciunt
+          vitae unde quisquam praesentium debitis saepe?</p>
+      </div>
+      <div class="select-container container wrap align-center">
+        <div class="select col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <input type="radio" name="question" value="yes" id="yes" class="select-radio" checked>
+          <label class="select-label" for="yes">Yes</label>
+        </div>
+        <div class="select col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <input type="radio" name="question" value="no" id="no" class="select-radio">
+          <label class="select-label" for="no">No</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container column align-center game">
+    <div class="balloon balloon-left">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+    </div>
+    <div class="balloon balloon-right">
+      <p>No, fuck you bitch!!!</p>
+    </div>
+  </div>
+
+  <div class="container align-center game">
+    <div class="size margin">
+      <ul class="list">
+        <li>Good morning.</li>
+        <li>Thou hast had a good night's sleep, I hope. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+          officiis totam autem amet, repudiandae recusandae nulla delectus harum ipsa pariatur suscipit voluptate
+          minima laboriosam ipsam illo at! Aliquam, animi asperiores!</li>
+        <li>Thou hast had a good afternoon</li>
+        <li>Good night.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container align-center game">
+    <div class="size margin">
+      <table class="table" style="width:100%">
+        <tr>
+          <th>Position</th>
+          <th>Nickname</th>
+          <th>Lifes</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <th>01.</th>
+          <th>Gustavo Quinalha</th>
+          <th>03</th>
+          <th>472394239847</th>
+        </tr>
+        <tr>
+          <th>02.</th>
+          <th>Huntr</th>
+          <th>03</th>
+          <th>45645634456</th>
+        </tr>
+        <tr>
+          <th>03.</th>
+          <th>Huntr</th>
+          <th>03</th>
+          <th>12315634234</th>
+        </tr>
+        <tr>
+          <th>04.</th>
+          <th>Huntr</th>
+          <th>04</th>
+          <th>423432434</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <div class="p-y-8">
+      <p>Create with love by <a href="">@gustavoquinalha</a> </p>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.1/dist/typeit.min.js">
   </script>
   <script>
     // docs
     // https://typeitjs.com/
-    new TypeIt('#hero', {
-        speed: 50,
-        startDelay: 900
+
+    new TypeIt('#ds', {
+        speed: 100,
+        waitUntilVisible: true
       })
-      .type('The most versatile animated typing utility on the internte')
-      .type('et')
-      .pause(750)
       .go();
 
   </script>
