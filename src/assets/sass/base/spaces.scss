@@ -1,0 +1,89 @@
+// margin
+@for $i from 0 to length($sizes) {
+  .m-#{$i} {
+    margin: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .m-t-#{$i} {
+    margin-top: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .m-r-#{$i} {
+    margin-right: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .m-b-#{$i} {
+    margin-bottom: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .m-l-#{$i} {
+    margin-left: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .m-x-#{$i} {
+    margin: 0 unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .m-y-#{$i} {
+    margin: unquote(nth($sizes, $i+1)) 0;
+  }
+}
+
+// margin
+
+// padding
+@for $i from 0 to length($sizes) {
+  .p-#{$i} {
+    padding: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .p-t-#{$i} {
+    padding-top: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .p-r-#{$i} {
+    padding-right: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .p-b-#{$i} {
+    padding-bottom: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .p-l-#{$i} {
+    padding-left: unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .p-x-#{$i} {
+    padding: 0 unquote(nth($sizes, $i+1));
+  }
+}
+
+@for $i from 0 to length($sizes) {
+  .p-y-#{$i} {
+    padding: unquote(nth($sizes, $i+1)) 0;
+  }
+}
+
+// padding

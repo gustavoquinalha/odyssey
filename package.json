@@ -1,0 +1,72 @@
+{
+  "name": "@gustavoquinalha/ds-default",
+  "version": "0.0.5",
+  "title": "Serrabits Design System",
+  "description": "Create by Serrabits",
+  "homepage": "https://serrabits.com.br/",
+  "license": "",
+  "author": "Gustavo Quinalha<gusquinalha@gmail.com>",
+  "contributors": [],
+  "scripts": {
+    "dev": "gulp default",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "rm -rf storybook && rm -rf storybook-static && build-storybook -o storybook && sed -i -e 's/\\/sb_dll/sb_dll/g' storybook/index.html",
+    "build": "gulp build && rm -rf storybook && rm -rf storybook-static && build-storybook -o storybook && sed -i -e 's/\\/sb_dll/sb_dll/g' storybook/index.html",
+    "lint:style": "stylelint 'src/assets/sass/*/*.scss' --config .stylelintrc --syntax scss",
+    "lint:md": "remark .",
+    "lint": "remark . && stylelint 'src/assets/sass/*/*.scss' --config .stylelintrc --syntax scss"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-info": "^4.0.4",
+    "@storybook/html": "4.1.6",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^2.0.0",
+    "gulp-uglify": "^2.0.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "remark-cli": "^6.0.1",
+    "remark-lint": "^6.0.4",
+    "remark-preset-lint-recommended": "^3.0.2",
+    "run-sequence": "^1.2.2",
+    "storybook-readme": "^4.0.2",
+    "stylelint": "^9.9.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "@storybook/addon-a11y": "4.0.0-alpha.21",
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-backgrounds": "4.0.0-alpha.21",
+    "@storybook/addon-centered": "4.0.0-alpha.21",
+    "@storybook/addon-events": "4.0.0-alpha.21",
+    "@storybook/addon-jest": "4.0.0-alpha.21",
+    "@storybook/addon-knobs": "4.0.0-alpha.21",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addon-notes": "4.0.0-alpha.21",
+    "@storybook/addon-options": "4.0.0-alpha.21",
+    "@storybook/addon-storyshots": "4.0.0-alpha.21",
+    "@storybook/addon-storysource": "4.0.0-alpha.21",
+    "@storybook/addon-viewport": "4.0.0-alpha.21",
+    "@storybook/addons": "4.0.0-alpha.21",
+    "@storybook/core": "4.0.0-alpha.21",
+    "@storybook/core-events": "4.0.0-alpha.21"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gustavoquinalha/ds-default"
+  }
+}

@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  color: $color-white;
+  background: $color-dark;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.size {
+  width: 1366px;
+  max-width: 90%;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  width: 100vh;
+}
+
+.space {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.list-style-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.disabled,
+[disabled] {
+  opacity: .5;
+  user-select: none;
+  pointer-events: none;
+}

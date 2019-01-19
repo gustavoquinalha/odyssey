@@ -1,0 +1,8 @@
+.tmp
+/dist
+node_modules
+gulp-cache
+.DS_Store
+yarn.lock
+package-lock.json
+.npmrc

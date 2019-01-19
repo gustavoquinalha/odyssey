@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Design Systems" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design System</title>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- font -->
+  <!-- css -->
+  <link rel="stylesheet" href="./src/assets/design-system.min.css" />
+  <!-- css -->
+</head>
+
+<body>
+
+  <div class="container align-center" style="min-height: 100vh">
+    <h1>Design System <span id="hero" class="hero"></span></h1>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.1/dist/typeit.min.js">
+  </script>
+  <script>
+    // docs
+    // https://typeitjs.com/
+    new TypeIt('#hero', {
+        speed: 50,
+        startDelay: 900
+      })
+      .type('The most versatile animated typing utility on the internte')
+      .type('et')
+      .pause(750)
+      .go();
+
+  </script>
+</body>
+
+</html>
